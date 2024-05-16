@@ -17,11 +17,8 @@ components:
           targetPort: 5005
         - name: list-all-food
           protocol: https
-          secure: true
           targetPort: 8080
           path: /food
-          attributes: 
-            urlRewriteSupported: 'true'
       volumeMounts:
         - name: m2
           path: /home/user/.m2
